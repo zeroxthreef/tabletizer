@@ -1,0 +1,13 @@
+{
+	"display": "HDMI-A-0",
+	"buttons": [
+		{"13": " Control_L z "},
+		{"12": "Control_L"},
+		{"2": "m"}
+	],
+	"devs" : [
+		{"name": "Wacom Cintiq 21UX2 Pad pad", "button": true},
+		{"name": "Wacom Cintiq 21UX2 Pen stylus"},
+		{"name": "Wacom Cintiq 21UX2 Pen eraser"}
+	]
+}
