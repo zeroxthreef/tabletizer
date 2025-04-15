@@ -3,7 +3,6 @@ Description=Tablet control
 
 [Service]
 Type=simple
-Type=simple
 Restart=always
 RestartSec=10
 Environment="DISPLAY=:0"

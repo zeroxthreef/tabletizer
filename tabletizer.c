@@ -274,6 +274,7 @@ int t_map(t_ctx *t)
 	XRRFreeScreenResources(res);
 	return 0;
 error:
+	if(devs) XFree(devs);
 	if(cinfo) XRRFreeCrtcInfo(cinfo);
 	if(info) XRRFreeOutputInfo(info);
 	if(res) XRRFreeScreenResources(res);
@@ -324,7 +325,6 @@ int main(int argc, char **argv)
 			t_errln("require path to config.json to function");
 			return 1;
 		}
-		t_errln("TODO: check for xinput and xrandr, etc extensions present");
 		t_assert(t.u = udev_new(), goto error);
 		t_assert(t.m = udev_monitor_new_from_netlink(t.u, "udev"), goto error);
 		t_assert(!udev_monitor_filter_add_match_subsystem_devtype(t.m, "input", NULL), goto error);

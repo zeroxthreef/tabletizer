@@ -10,9 +10,9 @@ Configuration is done through a json file. The 'example_config.json' file should
 
 ## Dependencies
 * libudev
-* Xlib
-* libXi
-* libXrandr
+* xlib
+* libxi
+* libxrandr
 
 ## Build & Installation
 tabletizer.c _is_ the build system, and is used like so:
